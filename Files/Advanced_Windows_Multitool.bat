@@ -31,7 +31,7 @@ call :LOG "Tool started - %ADMIN_STATUS%"
 cls
 echo.
 echo  ╔════════════════════════════════════════════════════════════════════════════════╗
-echo  ║                                                                                ║
+echo  ║                               MADE BY DANYKAS                                  ║
 echo  ║                      ADVANCED WINDOWS MULTI-TOOL v2.0                          ║
 echo  ║                                                                                ║
 echo  ║                              [ %ADMIN_STATUS% ]                              ║
