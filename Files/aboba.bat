@@ -3,7 +3,7 @@ chcp 65001 >nul
 color 0A
 cls
 
-:: Show Banner
+:: Display Banner Safely
 echo.
 echo █████  ██████   ██████  ██████  ███████ ██      ██ ███████     ████████  ██████   ██████  ██
 echo ██   ██ ██   ██ ██    ██ ██   ██ ██      ██      ██ ██             ██    ██    ██ ██    ██ ██
