@@ -1,4 +1,4 @@
-#Multitool web app
+Multitool web app
 created by axqzme and danykas
 ---
 This collection contains various development tools, batch files, and educational resources. 
