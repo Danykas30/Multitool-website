@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 color 0A
-title Wi-Fi Host Scanner - MadeByAxqzme
+title Wi-Fi Host Scanner - MadeByAxqzme and Chatgpt
 cls
 
 :: Banner
@@ -13,7 +13,7 @@ echo ╚════██║██║██║     ██╔══╝╚══�
 echo ███████║██║███████╗███████╗    ██║     ██║  ██║██║ ╚████║██║  ██╗███████╗
 echo ╚══════╝╚═╝╚══════╝╚══════╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
 echo.
-echo [==> Real WiFi IP Scanner - MadeByAxqzme <==]
+echo [==> Real WiFi IP Scanner - MadeByAxqzmeAndChatGPT <==]
 echo.
 
 :: Get current subnet
