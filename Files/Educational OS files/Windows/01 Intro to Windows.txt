@@ -1,0 +1,20 @@
+Title: Introduction to Microsoft Windows
+
+1. What is Windows?
+- A proprietary OS developed by Microsoft.
+- Widely used in homes, schools, and businesses.
+
+2. Editions:
+- Home, Pro, Enterprise, Server
+
+3. File System:
+- NTFS (New Technology File System)
+
+4. Basic Navigation:
+- File Explorer
+- Control Panel
+- Settings
+
+Exercise:
+- Open the Control Panel and explore the “System” settings.
+- Write down your Windows version, edition, and system type.
