@@ -1,0 +1,7 @@
+Title: Managing Users and Permissions
+
+1. User Accounts: net user
+2. NTFS Permissions
+
+Exercise:
+- Create a new local user and give it admin rights (carefully!).

@@ -1,0 +1,10 @@
+Title: PowerShell Introduction
+
+1. What is PowerShell?
+2. Basics: cmdlets, variables, scripts
+
+Example:
+Get-Process
+
+Exercise:
+- List all running processes using PowerShell.

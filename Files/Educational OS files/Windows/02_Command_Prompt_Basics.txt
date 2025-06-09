@@ -1,0 +1,11 @@
+Title: Command Prompt Basics
+
+Commands:
+- dir: list contents
+- cd: change directory
+- cls: clear screen
+- copy: copy files
+- del: delete files
+
+Exercise:
+- Open CMD and navigate to your Desktop folder.

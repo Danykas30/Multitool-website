@@ -1,0 +1,7 @@
+Title: System Tools and Registry
+
+1. Tools: Task Manager, MSConfig, Disk Management
+2. Registry Editor: regedit
+
+Exercise:
+- Open Task Manager and find which program uses the most memory.
