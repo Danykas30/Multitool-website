@@ -1,0 +1,19 @@
+Title: Introduction to Linux
+
+1. What is Linux?
+- Linux is a free and open-source operating system kernel.
+- Popular distributions: Ubuntu, Debian, Fedora, Arch, CentOS.
+
+2. Desktop Environments:
+- GNOME, KDE, XFCE
+
+3. Linux File System Structure:
+/ – Root
+/home – User files
+/etc – Config files
+/var – Logs and variable data
+/bin, /sbin – System binaries
+
+Exercise:
+- Research which Linux distro you want to try.
+- Install it on a virtual machine (VM) like VirtualBox or VMware.
