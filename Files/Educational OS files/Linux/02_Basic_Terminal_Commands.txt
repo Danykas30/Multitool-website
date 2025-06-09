@@ -1,0 +1,11 @@
+Title: Basic Terminal Commands
+
+Commands:
+- ls: list directory contents
+- cd: change directory
+- pwd: print working directory
+- mkdir: make directory
+- rm: remove files/directories
+
+Exercise:
+- Create a directory named 'test', navigate into it, and create a file inside.

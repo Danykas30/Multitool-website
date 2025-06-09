@@ -1,0 +1,10 @@
+Title: File Permissions and Users
+
+1. Permissions:
+- Read (r), Write (w), Execute (x)
+
+2. Commands:
+- chmod, chown, usermod
+
+Exercise:
+- Create a file and set different permissions using chmod.

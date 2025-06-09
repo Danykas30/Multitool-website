@@ -1,0 +1,11 @@
+Title: Shell Scripting Basics
+
+1. What is a shell script?
+2. Basics: variables, loops, conditionals
+
+Example:
+#!/bin/bash
+echo 'Hello, world!'
+
+Exercise:
+- Write a script that prints all even numbers from 1 to 10.

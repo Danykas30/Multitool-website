@@ -1,0 +1,8 @@
+Title: Package Management
+
+1. APT (Debian/Ubuntu): apt update, apt install
+2. YUM/DNF (RedHat): yum install, dnf upgrade
+3. Pacman (Arch): pacman -Syu
+
+Exercise:
+- Update your system and install the 'htop' package.
