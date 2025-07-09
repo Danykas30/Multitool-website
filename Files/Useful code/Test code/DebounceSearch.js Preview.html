@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DebounceSearch.js Preview</title>
+  <style>
+    pre { background: #222; color: #eee; padding: 1em; border-radius: 6px;}
+    input { margin: 1em 0; }
+  </style>
+</head>
+<body>
+  <h2>DebounceSearch.js</h2>
+  <input id="search" placeholder="Type to search..." />
+  <pre><code>
+function debounce(func, delay) {
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+}
+
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", debounce(() => {
+  console.log("Searching for:", searchInput.value);
+}, 500));
+  </code></pre>
+  <script>
+    function debounce(func, delay) {
+      let timeoutId;
+      return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          func.apply(this, args);
+        }, delay);
+      };
+    }
+    const searchInput = document.getElementById("search");
+    searchInput.addEventListener("input", debounce(() => {
+      console.log("Searching for:", searchInput.value);
+    }, 500));
+  </script>
+</body>
+</html>
