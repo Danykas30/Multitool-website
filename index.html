@@ -5,6 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multitool Hub - Educational Resources</title>
   <style>
+    .waterdrops {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+.waterdrop {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 60% 40%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.19) 60%, rgba(255,255,255,0.05) 100%);
+  box-shadow: 0 4px 24px 6px rgba(120, 180, 255, 0.12);
+  backdrop-filter: blur(3.5px) saturate(160%);
+  -webkit-backdrop-filter: blur(3.5px) saturate(160%);
+  animation: waterdrop-move 7s infinite alternate;
+}
+
+/* Individual waterdrops with unique size, position, speed */
+.waterdrop:nth-child(1) {
+  width: 44px; height: 44px;
+  top: 18%; left: 13%;
+  animation-delay: 0s;
+}
+.waterdrop:nth-child(2) {
+  width: 28px; height: 28px;
+  top: 40%; left: 77%;
+  animation-delay: 2s;
+}
+.waterdrop:nth-child(3) {
+  width: 38px; height: 38px;
+  top: 80%; left: 30%;
+  animation-delay: 4s;
+}
+.waterdrop:nth-child(4) {
+  width: 22px; height: 22px;
+  top: 60%; left: 59%;
+  animation-delay: 1.2s;
+}
+
+@keyframes waterdrop-move {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.07) rotate(4deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(10px) scale(0.94) rotate(-3deg);
+    opacity: 0.65;
+  }
+}
     * {
       margin: 0;
       padding: 0;
@@ -302,6 +360,7 @@
   </style>
 </head>
 <body>
+  
   <div class="floating-shapes">
     <div class="shape"></div>
     <div class="shape"></div>
@@ -309,6 +368,7 @@
   </div>
 
   <div class="container">
+    
     <div class="header">
       <h1>🛠️ Multitool Hub</h1>
       <p class="subtitle">Educational Resources & Development Tools</p>
@@ -336,6 +396,12 @@
         📧 Contact Us
       </a>
     </div>
+    <div class="waterdrops">
+  <div class="waterdrop"></div>
+  <div class="waterdrop"></div>
+  <div class="waterdrop"></div>
+  <div class="waterdrop"></div>
+</div>
   </div>
 
   <script>
