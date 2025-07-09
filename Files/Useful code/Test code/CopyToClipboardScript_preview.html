@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy to Clipboard Script Preview</title>
+  <style>
+    pre {
+      background: #222;
+      color: #eee;
+      padding: 1em;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    button { margin: 1em 0; }
+  </style>
+</head>
+<body>
+  <h2>Copy to Clipboard Script</h2>
+  <button onclick="copyToClipboard('Hello, world!')">Copy "Hello, world!"</button>
+  <pre><code>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text)
+    .then(() => alert('Copied to clipboard!'))
+    .catch(err => console.error('Error:', err));
+}
+
+// Example usage:
+copyToClipboard('Hello, world!');
+  </code></pre>
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => alert('Copied to clipboard!'))
+        .catch(err => console.error('Error:', err));
+    }
+  </script>
+</body>
+</html>
