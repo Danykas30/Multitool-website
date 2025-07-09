@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AdvancedReactComponent.tsx Preview</title>
+  <style>
+    pre { background: #222; color: #eee; padding: 1em; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h2>AdvancedReactComponent.tsx</h2>
+  <pre><code>
+import React, { useState, useEffect } from "react";
+
+type User = {
+  id: number;
+  name: string;
+};
+
+export default function UserList() {
+  const [users, setUsers] = useState<User[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(res => res.json())
+      .then(data => {
+        setUsers(data);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+}
+  </code></pre>
+</body>
+</html>
