@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debouce function.js Preview</title>
+  <style>
+    pre { background: #222; color: #eee; padding: 1em; border-radius: 6px;}
+  </style>
+</head>
+<body>
+  <h2>Debouce function.js</h2>
+  <pre><code>
+function debounce(func, delay) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+// Example:
+window.addEventListener('resize', debounce(() => {
+  console.log('Window resized');
+}, 300));
+  </code></pre>
+</body>
+</html>
