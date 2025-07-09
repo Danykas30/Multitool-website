@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Query Parameters from URL.js Preview</title>
+  <style>
+    pre { background: #222; color: #eee; padding: 1em; border-radius: 6px;}
+  </style>
+</head>
+<body>
+  <h2>Get Query Parameters from URL.js</h2>
+  <pre><code>
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Example: If URL is ?name=danykas
+console.log(getQueryParam('name')); // Outputs: danykas
+  </code></pre>
+</body>
+</html>
