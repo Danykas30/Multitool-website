@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Glassmorphsim</title>
+  <title>Glassmorphsim and dark mode</title>
   <style>
     .glass {
   background: rgba(255, 255, 255, 0.1);
@@ -12,6 +12,18 @@
 }
   </style>
 </head>
-<body>
-  <div id="glass">
+<body class="dark-mode"><button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+
+<style>
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+</style>
+  <div class="glass">
 </body>
