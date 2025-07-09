@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GenericQueue.ts Preview</title>
+  <style>
+    pre {
+      background: #222;
+      color: #eee;
+      padding: 1em;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>GenericQueue.ts</h2>
+  <pre><code>
+class Queue&lt;T&gt; {
+  private items: T[] = [];
+
+  enqueue(item: T) {
+    this.items.push(item);
+  }
+
+  dequeue(): T | undefined {
+    return this.items.shift();
+  }
+
+  peek(): T | undefined {
+    return this.items[0];
+  }
+
+  isEmpty(): boolean {
+    return this.items.length === 0;
+  }
+}
+
+// Usage example
+const numberQueue = new Queue&lt;number&gt;();
+numberQueue.enqueue(1);
+numberQueue.enqueue(2);
+console.log(numberQueue.dequeue()); // 1
+  </code></pre>
+</body>
+</html>
