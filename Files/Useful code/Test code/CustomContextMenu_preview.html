@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Custom Context Menu Preview</title>
+  <style>
+    #menu {
+      display: none;
+      position: absolute;
+      background: #eee;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Custom Context Menu Demo</h2>
+  <p>Right click anywhere on this page!</p>
+  <div id="menu">Custom Menu</div>
+  <script>
+    const menu = document.getElementById("menu");
+    document.addEventListener("contextmenu", (e) => {
+      e.preventDefault();
+      menu.style.left = `${e.pageX}px`;
+      menu.style.top = `${e.pageY}px`;
+      menu.style.display = "block";
+    });
+    document.addEventListener("click", () => {
+      menu.style.display = "none";
+    });
+  </script>
+</body>
+</html>
